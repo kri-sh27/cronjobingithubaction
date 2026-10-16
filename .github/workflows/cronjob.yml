@@ -1,7 +1,7 @@
 name: trigger Action on a cron shedule
 on: 
   schedule:
-    - cron: '51 7 * * 1-5'
+    - cron: '55 7 * * 1-5'
 
 jobs:
   build:
