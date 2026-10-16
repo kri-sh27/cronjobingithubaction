@@ -3,7 +3,7 @@ name: Trigger Action on a Cron Schedule
 
 on:
   schedule:
-    - cron: '05 8 * * 1-5'
+    - cron: '15 8 * * 5'
   workflow_dispatch:
 
 jobs:
