@@ -1,0 +1,11 @@
+name: trigger Action on a cron shedule
+on: 
+  schedule:
+    - cron: '17 13 * * 1-5'
+
+jobs:
+  build:
+    name: trigger code checkout
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
