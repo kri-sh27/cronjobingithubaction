@@ -1,11 +1,16 @@
-name: trigger Action on a cron shedule
-on: 
+name: Trigger Action on a Cron Schedule
+
+on:
   schedule:
-    - cron: '55 7 * * 1-5'
+    - cron: '59 7 * * 1-5'
+  workflow_dispatch:
 
 jobs:
   build:
-    name: trigger code checkout
+    name: Trigger Code Checkout
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Show execution time
+        run: date -u
